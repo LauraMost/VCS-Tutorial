@@ -13,6 +13,8 @@ public class Tutorial {
 		
 		System.out.println("Welcome, "+user+", to the Introduction to Version Control Systems!");
 		
+		scanner.close();
+		
 	}
 
 }
