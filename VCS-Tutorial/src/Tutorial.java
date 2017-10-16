@@ -7,11 +7,21 @@ public class Tutorial {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Please enter your name: ");
+		System.out.println("Please enter your first name: ");
 		
-		String user = scanner.next();
+		String firstName = scanner.next();
 		
-		System.out.println("Welcome, "+user+", to the Introduction to Version Control Systems!");
+		System.out.println("Please enter your last name: ");
+		
+		String lastName = scanner.next();
+		
+		System.out.println("Please enter your Matrikelnummer: ");
+		
+		int matrikelnummer = Integer.parseInt(scanner.next());
+		
+		Student s = new Student(firstName, lastName, matrikelnummer);
+		
+		System.out.println("Welcome, "+s.getFirstName()+", to the Introduction to Version Control Systems!");
 		
 		scanner.close();
 		
